@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activity.Donate">
+
+
+  <item
+      android:id="@+id/accept"
+      android:orderInCategory="100"
+      android:title="@string/accept"/>
+
+  <item
+      android:id="@+id/donate"
+      android:orderInCategory="100"
+      android:title="@string/donate"/>
+
+  <item
+      android:id="@+id/reject"
+      android:orderInCategory="100"
+      android:title="@string/reject"/>
+
+  <item
+      android:id="@+id/message"
+      android:orderInCategory="100"
+      android:title="@string/message"/>
+
+</menu>
