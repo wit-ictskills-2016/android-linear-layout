@@ -6,16 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
-// developer.android.com/guide/topics/ui/layout/linear.html
-
-public class Message extends AppCompatActivity
+public class Donation extends AppCompatActivity
 {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_message);
+    setContentView(R.layout.activity_donation);
   }
 
   @Override
@@ -35,12 +32,11 @@ public class Message extends AppCompatActivity
         startActivity(new Intent(this, Accept.class));
         break;
       case R.id.reject:
-        startActivity(new Intent(this, Reject.class));
-        break;
-      case R.id.donation:
         startActivity(new Intent(this, Donation.class));
         break;
-
+      case R.id.message:
+        startActivity(new Intent(this, Message.class));
+        break;
     }
     return true;
   }

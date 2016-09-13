@@ -31,11 +31,11 @@ public class Reject extends AppCompatActivity
       case R.id.accept:
         startActivity(new Intent(this, Accept.class));
         break;
-      case R.id.reject:
-        startActivity(new Intent(this, Reject.class));
-        break;
       case R.id.message:
         startActivity(new Intent(this, Message.class));
+        break;
+      case R.id.donation:
+        startActivity(new Intent(this, Donation.class));
         break;
     }
     return true;

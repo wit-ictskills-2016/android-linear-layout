@@ -8,5 +8,14 @@
   <string name="message">Message</string>
   <string name="send">Send</string>
 
+  <string name="donateTitle">Welcome Homer</string>
+  <string name="donateSubtitle">Please give generously</string>
+  <string name="PayPal">PayPal</string>
+  <string name="Direct">Direct</string>
+  <string name="amount">Amount:</string>
+  <string name="donateButton">Donate</string>
+  <string name="initialAmount">0</string>
+  <string name="amountSoFarLabel">Total so far:</string>
+  <string name="donation">Donation</string>
 </resources>
 

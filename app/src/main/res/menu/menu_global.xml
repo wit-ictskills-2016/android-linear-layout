@@ -24,4 +24,9 @@
       android:orderInCategory="100"
       android:title="@string/message"/>
 
+  <item
+      android:id="@+id/donation"
+      android:orderInCategory="100"
+      android:title="@string/donation"/>
+
 </menu>
