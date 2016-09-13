@@ -3,6 +3,7 @@ package app.donation;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -13,6 +14,7 @@ public class Donation extends AppCompatActivity
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_donation);
+    getMetrics();
   }
 
   @Override
@@ -41,4 +43,17 @@ public class Donation extends AppCompatActivity
     return true;
   }
 
+  /**
+   * https://stackoverflow.com/questions/3166501/getting-the-screen-density-programmatically-in-android
+   * https://developer.android.com/reference/android/util/DisplayMetrics.html
+   */
+  public void getMetrics() {
+    DisplayMetrics metrics = getResources().getDisplayMetrics();
+    float density = metrics.density;
+    float xdpi = metrics.xdpi; // pixels per inch in x direction
+    float ydpi = metrics.ydpi; // pixels per inch in y direction
+    int densityDpi = metrics.densityDpi; // screen density in dots per inch
+    int heightPixels = metrics.heightPixels; //absolute height of the available display size in pixels.
+    int widthPixels = metrics.widthPixels; // absolute width of the available display size in pixels.
+  }
 }
